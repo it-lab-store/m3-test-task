@@ -15,62 +15,106 @@
   <body>
 
     <!--Menu element-->
-    <nav class="nav flex-column">
-      <a class="nav-link active" aria-current="page" href="#">Active</a>
-      <a class="nav-link" href="#">Link</a>
-      <a class="nav-link" href="#">Link</a>
-      <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasDevelop" role="button" aria-controls="offcanvasExample">
-        Develop
-      </a>
-      
-      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasDevelop" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Develop overview</h5>
-          <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
-        </div>
-        <div class="offcanvas-body">
-          <!-- <div>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    <nav id="desktopNav" class="nav flex-column">
+      <div class="text-center">
+        <a class="nav-link active" aria-current="page" href="#"><img src="svg/search_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="search-svg"><p class="label">Search</p></a>
+        <a class="nav-link" href="#"><img src="svg/m3-logo-black-and-white.svg" alt="M3-Home-svg">Home</a>
+        <a class="nav-link" href="#"><img src="svg/apps_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="search-svg"><p class="label">Get started</p></a>
+        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasDevelop" role="button" aria-controls="offcanvasExample">
+          <img src="svg/code_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Develop-svg"><p class="label">Develop</p>
+        </a>
+        <!--SubMenu-Level2-->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasDevelop" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Develop overview</h5>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
           </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div> -->
-        </div>
-      </div>
-      <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasFoundation" role="button" aria-controls="offcanvasExample">
-        Foundation
-      </a>
-      
-      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasFoundation" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Foundation overview</h5>
-          <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
-        </div>
-        <div class="offcanvas-body">
-          <!-- <div>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          <div class="offcanvas-body">
+            <a class="nav-link active" aria-current="page" href="#">Android</a>
+            <a class="nav-link" href="#">Flutter</a>
+            <a class="nav-link" href="#">Web</a>
+            <!-- <div>
+              Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div> -->
           </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div> -->
         </div>
+        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasFoundation" role="button" aria-controls="offcanvasExample"><img src="svg/home_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Foundations-svg">
+          <p class="label">Foundations</p>
+        </a>
+        <!--SubMenu-Level2-->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasFoundation" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Foundation overview</h5>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+          </div>
+          <div class="offcanvas-body">
+            <a class="nav-link active" aria-current="page" href="#">Accessibility</a>
+            <a class="nav-link" href="#">Content design</a>
+            <a class="nav-link" href="#"> Customizing Material</a>
+            <a class="nav-link" href="#"> Design tokens</a>
+            <a class="nav-link" href="#"> Iteraction</a>
+            <a class="nav-link" href="#"> Layout</a>
+            <a class="nav-link" href="#"> Material A-Z</a>
+            <!-- <div>
+              Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+
+        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasStyles" role="button" aria-controls="offcanvasExample">
+          <img src="svg/palette_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Styles-svg"><p class="label">Styles</p>
+        </a>
+        <!--SubMenu-Level2-->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasStyles" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Styles overview</h5>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+          </div>
+          <div class="offcanvas-body">
+            <a class="nav-link active" aria-current="page" href="#">Color</a>
+            <a class="nav-link" href="#">Elevation</a>
+            <a class="nav-link" href="#">Icons</a>
+            <a class="nav-link" href="#">Motion</a>
+            <a class="nav-link" href="#">Shape</a>
+            <a class="nav-link" href="#">Typography</a>
+          </div>
+        </div>
+
+        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasComponents" role="button" aria-controls="offcanvasExample">
+          <img src="svg/add_circle_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="add_circle-svg"><p class="label">Components</p>
+        </a>
+        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasBlog" role="button" aria-controls="offcanvasExample">
+          <img src="svg/pages_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="pagesBlog-svg"><p class="label">Blog</p>
+        </a>
+      <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
       </div>
-      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
     </nav>
+
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
     
 
 

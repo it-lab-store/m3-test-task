@@ -9,13 +9,15 @@ p{
 }
 */
 .offcanvas{
-    margin-left: 10rem !important;
+    margin-left: 5.5rem !important;
+    background-color: #F2ECEE;
+    text-align: left;
 }
 
 #desktopNav{
     display: block;
     background-color: #F2ECEE;
-    width: 10rem;
+    width: 5.5rem;
 }
 
 #mobileNav{
