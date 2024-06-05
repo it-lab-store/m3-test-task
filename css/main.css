@@ -8,23 +8,42 @@ p{
     font-family: "M3-ref";
 }
 */
+:root{
+    --light-gray: #17212b;
+}
 body{
     margin: 0;
+    font-family: 'Product Sans', sans-serif;
+}
+h1{
+    font-size: 6.5rem;
+}
+.fs-1{
+    font-size: 3.8rem !important;
 }
 
-
+.fs-4{
+    /* letter-spacing: -0.015rem; */
+}
 .offcanvas{
     margin-left: 6.25rem !important;
     background-color: #F2ECEE;
     text-align: left;
     border-left: 1px solid #E8E0E8;
 }
-section{
-    border: 2px solid red;
+#stickyElem{
+    background-color: var(--light-gray);
 }
-#mobileNav{
+section{
+    /* border: 1px solid red; */
+}
+#mobileNav {
     display: none;
     background-color: #F2ECEE;
+}
+#mobileNav .offcanvas{
+    margin-left: 0 !important;
+    width: 85%;
 }
 #desktopNav{
     display: block;
@@ -36,13 +55,10 @@ section{
     transition-duration: 0.1s;
 }
 div.label{
-
     height: 2rem;    
     font-size: 0.70rem;
     transition-duration: 0.1s;
 }
-
-
 .nav-link:hover{
     color: black;
 }
@@ -51,7 +67,6 @@ div.label:hover{
     border-radius: 1rem;
     background-color: #E5DFE2;
     text-shadow: 0 0 0.05rem #17212b, 0 0 0.15rem black;
-
 }
 #customStyleLnk{
     border-radius: 1rem;
@@ -65,29 +80,38 @@ div.label:hover{
     background-color: #DCDAF5;
 }
 #M3-icon{
-    scale: 50%;
+    margin: 0;
+    scale: 75%;
     fill: #4D4256 !important;
 }
 svg{
     fill: #4D4256;
     scale: 50%;
 }
-
 .btn-primary{
     background-color: #7051D9;
     border: none;
-    border-radius: 25rem;
     height: 5rem;
     width: auto;
     font-size: 2rem;
 }
 
+.t--est{
+    border-radius: 2rem;
+}
+
 /*QUERIES*/
+/* @media screen and (min-width: 577px){
+
+} */
 @media screen and (max-width: 576px){
     #desktopNav{
         display: none;
     }
     #mobileNav{
         display: block;
+    }
+    #stickyElem{
+        display: none !important;
     }
 }
