@@ -17,6 +17,29 @@
     <section>
 
         <div class="container-fluid">
+            <div id="mobileNav">
+              <nav class="navbar bg-body-tertiary">
+                <form class="container-fluid justify-content-between">
+                  <!--<button class="btn me-2" type="button"><img src="svg/menu_open_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="search-svg">--><!--menu--><!--</button>-->
+                  <!-- <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button> -->
+                  <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasMobileMenu" role="button" aria-controls="offcanvasExample"><div id="" class=""><img src="svg/menu_open_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="menu-svg"></div></a>
+                  <a class="nav-link" href="#"><div id="" class=""><img id="" src="svg/m3-logo-black-and-white.svg" height="30rem" alt="M3-Home-svg"></div></a>
+                  <a class="nav-link" href="#"><div id="" class=""><img src="svg/search_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="search-svg"></div></a>
+                      <!--SubMenu-Level2-->
+                      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasMobileMenu" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasMobileMenuLabel">Menu</h5>
+                          <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+                        </div>
+                        <div class="offcanvas-body">
+                          <a class="nav-link active" aria-current="page" href="#">Android</a>
+                          <a class="nav-link" href="#">Flutter</a>
+                          <a class="nav-link" href="#">Web</a>
+                        </div>
+                      </div>
+                </form>
+              </nav>
+            </div>
           <div class="d-flex">
                     <div class="">
                       <!--Menu element-->
