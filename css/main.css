@@ -10,6 +10,11 @@ p{
 */
 :root{
     --light-gray: #17212b;
+    --light-main-backgound-color: #F2ECEE;
+    --border-radius-image: 2rem;
+    --fs-1-mobileresize: 3rem;
+    --fs-4-mobileresize: 0.5rem;
+    --no-border: none;
 }
 body{
     margin: 0;
@@ -19,7 +24,7 @@ h1{
     font-size: 6.5rem;
 }
 .fs-1{
-    font-size: 3.8rem !important;
+    font-size: 6.5rem;
 }
 
 .fs-4{
@@ -32,6 +37,7 @@ h1{
     border-left: 1px solid #E8E0E8;
 }
 #stickyElem{
+    display: block;
     background-color: var(--light-gray);
 }
 section{
@@ -96,14 +102,30 @@ svg{
     font-size: 2rem;
 }
 
-.t--est{
-    border-radius: 2rem;
+video{
+    border-radius: var(--border-radius-image);
+}
+
+.card-body{
+    background-color: var(--light-main-backgound-color);
+    border-radius: var(--border-radius-image);
+    
+}
+
+.card{
+    border-radius: var(--border-radius-image);
+    border: var(--no-border);
+}
+img{
+    border-radius: var(--border-radius-image);
 }
 
 /*QUERIES*/
-/* @media screen and (min-width: 577px){
-
-} */
+@media screen and (max-width: 5000px) and (min-width: 577px) {
+    #mobileElem{
+        display: none !important;
+    }
+} 
 @media screen and (max-width: 576px){
     #desktopNav{
         display: none;
@@ -113,5 +135,11 @@ svg{
     }
     #stickyElem{
         display: none !important;
+    }
+    h1 {
+        font-size: var(--fs-1-mobileresize);
+    }
+    p. fs-4{
+        font-size: var(--fs-4-mobileresize);
     }
 }

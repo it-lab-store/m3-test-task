@@ -23,6 +23,7 @@
 
     <div class="container-fluid">
           <section style="z-index: 2 !important;">
+            <!--Mobile Menu Bar-->
             <div id="mobileNav">
               <nav class="navbar bg-body-tertiary">
                 <form class="container-fluid justify-content-between">
@@ -32,20 +33,53 @@
                   <a class="nav-link" href="#"><div id="" class="justify-content-center align-items-start"><img id="" src="svg/m3-logo-black-and-white.svg" height="30rem" alt="M3-Home-svg"></div></a>
                   <a class="nav-link" href="#"><div id="" class=""><img src="svg/search_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="search-svg"></div></a>
                       <!--SubMenu-Level2-->
-                      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasMobileMenu" aria-labelledby="offcanvasExampleLabel">
+                      <div class="offcanvas offcanvas-start" style="width: 20rem;" data-bs-scroll="false" data-bs-backdrop="static" tabindex="-1" id="offcanvasMobileMenu" aria-labelledby="offcanvasExampleLabel">
                         <div class="offcanvas-header">
-                          <h5 class="offcanvas-title" id="offcanvasMobileMenuLabel">Menu</h5>
-                          <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+                          <!-- <h5 class="offcanvas-title" id="offcanvasMobileMenuLabel">Menu</h5> -->
+                          <a class="nav-link" data-bs-dismiss="offcanvas" href="#" role="button" aria-controls="offcanvasExample" aria-label="Close"><img src="svg/menu_open_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="menu-svg"></a>         
+                          <!-- <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasDevelop" role="button" aria-controls="offcanvasExample"> -->
+                          
                         </div>
                         <div class="offcanvas-body">
-                          <a class="nav-link active" aria-current="page" href="#">Android</a>
-                          <a class="nav-link" href="#">Flutter</a>
-                          <a class="nav-link" href="#">Web</a>
+                          <a class="nav-link active" aria-current="page" href="#"><p class="label"><img src="svg/m3-logo-black-and-white.svg" height="30rem" alt="M3-Home-svg">Home</p></a>
+                          <a class="nav-link" href="#"><p class="label"><img src="svg/apps_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="search-svg">Get started</p></a>
+                          <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasMobile-Develop" role="button" aria-controls="offcanvasExample">
+                            <div class="label"><p class="label fs-6"><img src="svg/code_24dp_FILL0_wght400_GRAD0_opsz24.svg" height="" alt="Develop-svg">Develop -></p></div>
+                          </a>
+                            <!--SubMenu-Level2-->
+                            <div class="offcanvas offcanvas-start" data-bs-scroll="false" data-bs-backdrop="static" tabindex="-1" id="offcanvasMobile-Develop" aria-labelledby="offcanvasExampleLabel">
+                              <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Develop overview</h5>
+                              </div>
+                              <div class="offcanvas-body">
+                                <a class="nav-link active" aria-current="page" href="#">Android</a>
+                                <a class="nav-link" href="#">Flutter</a>
+                                <a class="nav-link" href="#">Web</a>
+                              </div>
+                            </div>
+                          <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasMobile-Foundations" role="button" aria-controls="offcanvasExample">
+                            <div class="label"><p class="label fs-6"><img src="svg/home_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Foundations-svg">Foundations -></p></div>
+                          </a>
+                            <!--SubMenu-Level2-->
+                            <div class="offcanvas offcanvas-start" data-bs-scroll="false" data-bs-backdrop="static" tabindex="-1" id="offcanvasMobile-Foundations" aria-labelledby="offcanvasExampleLabel">
+                              <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Foundations overview</h5>
+                              </div>
+                              <div class="offcanvas-body">
+                                <a class="nav-link active" aria-current="page" href="#">Android</a>
+                                <a class="nav-link" href="#">Flutter</a>
+                                <a class="nav-link" href="#">Web</a>
+                              </div>
+                            </div>
+                          <a class="nav-link" href="#"><div class="label"><p class="label fs-6"><img src="svg/palette_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Foundations-svg">Styles -> </p></div></a>
+                          <a class="nav-link" href="#"><div class="label"><p class="label fs-6"><img src="svg/add_circle_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Foundations-svg">Components -> </p></div></a>
+                          <a class="nav-link" href="#"><div class="label"><p class="label fs-6"><img src="svg/pages_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Foundations-svg">Blog -> </p></div></a>
                         </div>
                       </div>
                 </form>
               </nav>
             </div>
+            <!--Desktop Menu Bar-->
             <div class="d-flex">
                     <div class="">
                       <div id="stickyElem" class="" style="z-index: -1 !important; block-size: 200rem; width: 5.5rem; margin: 0 0 -200rem;"></div>
@@ -148,12 +182,13 @@
                       </nav>
                     </div>
 
-                    <div class="container-fluid mx-2 justify-content-between">
-                      <div class="d-flex">
+                  <!--<div class="">
+                    <div class="row row-cols-1 row-cols-md-2 g-2">
+                      <div id="" class="">
                         <div class="col col-6 me-1">
-                          <div class="card" style="height: 35rem;" >
-                            <div class="card-body bg-light">
-                              <div class="d-flex flex-wrap mx-5 my-5">
+                          <div class="card " style="height: 35rem;" >
+                            <div class="card-body ">
+                              <div class="mx-3 my-3">
                                 <h1>Material Design</h1>
                                 <p class="fs-4">Material 3 is the latest version of Google’s open-source design system. Design and build beautiful, usable products with Material 3.</p>
                                 <button class="btn btn-primary px-5 rounded-pill">Get started</button>
@@ -163,17 +198,45 @@
 
 
                         </div>
-                        <div class="col col-6 ms-1">
-                          <div class="card" style="height: 35rem;">
-                            <div class="card-body bg-light" style="padding: 0;">
-                              <video autoplay height="550rem" src="video/65da8f0326427a8e71bfa678348f3fa1a4bb1660e0b013591eb3bfd9df455bd5a3334249de61229029be7d2fd7cf18d4e143728b7e0702b6bde6251a.mp4"></video>
+                        <div class="col col-6 ms-1 px-0 py-0">
+                          <div class="card ">
+                            <div class="card-body px-0 py-0">
+                    
+                              <video autoplay style="width: 15 %;" src="video/65da8f0326427a8e71bfa678348f3fa1a4bb1660e0b013591eb3bfd9df455bd5a3334249de61229029be7d2fd7cf18d4e143728b7e0702b6bde6251a.mp4"></video>
+                     
                             </div>
+                          </div>
                         </div>
+                      </div>
+                    </div> 
+                  </div>-->
+                  
+                  <div class="container-fluid mx-3 mt-2">
+                    <div id="" class="d-flex flex-fill">
+                      <div class="col col-6 me-1">
+                        <div class="card" style="min-width: 20rem;" >
+                          <div class="card-body px-0 py-0">
+                            <div class="d-flex flex-wrap mx-5 my-5">
+                              <h1 class="my-4">Material Design</h1>
+                              <p class="fs-4 text-wrap">Material 3 is the latest version of Google’s open-source design system. Design and build beautiful, usable products with Material 3.</p>
+                              <button class="btn btn-primary px-5 mb-5 rounded-pill">Get started</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col col-6 ms-1">
+                        <!-- <div class="card" style="min-width: 20rem;"> -->
+                          <!-- <div class="card-body px-0 py-0" > -->
+                            <video autoplay width="100%" src="video/65da8f0326427a8e71bfa678348f3fa1a4bb1660e0b013591eb3bfd9df455bd5a3334249de61229029be7d2fd7cf18d4e143728b7e0702b6bde6251a.mp4"></video>
+                          <!-- </div> -->
+                        <!-- </div> -->
                       </div>
                     </div>
             </div> 
+
           </section>
           
+          <!--I-->
           <section>
 
             <p>section2</p>
@@ -183,10 +246,10 @@
                 <div class="ms-5 ps-4"><p class="fs-1 text-left">News & launches</p></div>
                 <div class="row row-cols-1 row-cols-md-3 g-2">
                   <div class="col">
-                    <div class="card" style="min-width: 10rem;" >
-                      <div class="card-body bg-light px-0 py-0">
+                    <div class="card " style="min-width: 10rem;" >
+                      <div class="card-body  px-0 py-0">
                         <div class="d-flex flex-wrap">
-                          <img class="t--est" src="img/unnamed-5.png" width="100%"></img>
+                          <img class="" src="img/unnamed-5.png" width="100%"></img>
                           <p class="fs-4">Material Design at Google I/O</p>
                           <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
                         </div>
@@ -197,9 +260,9 @@
                     <div class="card" style="min-width: 10rem;" >
                       <div class="card-body bg-light px-0 py-0">
                         <div class="d-flex flex-wrap">
-                          <img class="t--est" src="img/unnamed.png" width="100%"></img>
-                          <p class="fs-4">Material Design at Google I/O</p>
-                          <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
+                          <img class="" src="img/unnamed.png" width="100%"></img>
+                          <p class="fs-4">New component: Carousel</p>
+                          <p class="fs-6">An expressive new way to display a horizontally scrolling collection of content</p> 
                         </div>
                       </div>
                     </div>
@@ -208,9 +271,9 @@
                     <div class="card" style="min-width: 10rem;" >
                       <div class="card-body bg-light px-0 py-0">
                         <div class="d-flex flex-wrap">
-                          <img class="t--est" src="img/unnamed-4.png" width="100%"></img>
-                          <p class="fs-4">Material Design at Google I/O</p>
-                          <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
+                          <img class="" src="img/unnamed-4.png" width="100%"></img>
+                          <p class="fs-4">M3 for Jetpack Compose</p>
+                          <p class="fs-6">With the latest stable release, use Jetpack Compose to build a complete M3 Android app</p>
                         </div>
                       </div>
                     </div>
@@ -227,7 +290,7 @@
                   <div class="card" style="width: 30rem;" >
                     <div class="card-body bg-light px-0 py-0">
                       <div class="d-flex flex-wrap">
-                        <img class="t--est" src="img/unnamed-5.png" width="100%"></img>
+                        <img class="" src="img/unnamed-5.png" width="100%"></img>
                         <p class="fs-4">Material Design at Google I/O</p>
                         <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
                       </div>
@@ -238,7 +301,7 @@
                   <div class="card" style="width: 30rem;" >
                     <div class="card-body bg-light px-0 py-0">
                       <div class="d-flex flex-wrap">
-                        <img class="t--est" src="img/unnamed.png" width="100%"></img>
+                        <img class="" src="img/unnamed.png" width="100%"></img>
                         <p class="fs-4">Material Design at Google I/O</p>
                         <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
                       </div>
@@ -249,7 +312,7 @@
                   <div class="card" style="width: 30rem;" >
                     <div class="card-body bg-secondary px-0 py-0">
                       <div class="d-flex flex-wrap">
-                        <img class="t--est" src="img/unnamed-4.png" width="100%"></img>
+                        <img class="" src="img/unnamed-4.png" width="100%"></img>
                         <p class="fs-4">Material Design at Google I/O</p>
                         <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
                       </div>
@@ -260,6 +323,7 @@
             </div>
           </section> -->
 
+          <!--II-->
           <section><p>section2</p>
 
           <!-- <div class="container-fluid mx-5 ps-5 justify-content-center"><div class=""></div>
@@ -269,7 +333,7 @@
                 <div class="card" style="width: 30rem;" >
                   <div class="card-body bg-light px-0 py-0">
                     <div class="d-flex flex-wrap">
-                      <img class="t--est" src="img/unnamed-5.png" width="100%"></img>
+                      <img class="" src="img/unnamed-5.png" width="100%"></img>
                       <p class="fs-4">Material Design at Google I/O</p>
                       <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
                     </div>
@@ -280,7 +344,7 @@
                 <div class="card" style="width: 30rem;" >
                   <div class="card-body bg-light px-0 py-0">
                     <div class="d-flex flex-wrap">
-                      <img class="t--est" src="img/unnamed.png" width="100%"></img>
+                      <img class="" src="img/unnamed.png" width="100%"></img>
                       <p class="fs-4">Material Design at Google I/O</p>
                       <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
                     </div>
@@ -291,7 +355,7 @@
                 <div class="card" style="width: 30rem;" >
                   <div class="card-body bg-secondary px-0 py-0">
                     <div class="d-flex flex-wrap">
-                      <img class="t--est" src="img/unnamed-4.png" width="100%"></img>
+                      <img class="" src="img/unnamed-4.png" width="100%"></img>
                       <p class="fs-4">Material Design at Google I/O</p>
                       <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
                     </div>
@@ -302,7 +366,7 @@
                 <div class="card" style="width: 30rem;" >
                   <div class="card-body bg-secondary px-0 py-0">
                     <div class="d-flex flex-wrap">
-                      <img class="t--est" src="img/unnamed-4.png" width="100%"></img>
+                      <img class="" src="img/unnamed-4.png" width="100%"></img>
                       <p class="fs-4">Material Design at Google I/O</p>
                       <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
                     </div>
@@ -313,7 +377,7 @@
                 <div class="card" style="width: 30rem;" >
                   <div class="card-body bg-secondary px-0 py-0">
                     <div class="d-flex flex-wrap">
-                      <img class="t--est" src="img/unnamed-4.png" width="100%"></img>
+                      <img class="" src="img/unnamed-4.png" width="100%"></img>
                       <p class="fs-4">Material Design at Google I/O</p>
                       <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
                     </div>
@@ -334,8 +398,10 @@
             </div>
           </div>
           </section> -->
+        </section>
 
-          <section><p>section</p></section>
+        <!--III-->
+        <section>
           
             <div class="ms-5 ps-5">
               <div class="container">
@@ -345,9 +411,9 @@
                     <div class="card" style="min-width: 10rem;" >
                       <div class="card-body bg-light px-0 py-0">
                         <div class="d-flex flex-wrap">
-                          <img class="t--est" src="img/unnamed-2.png" width="100%"></img>
-                          <p class="fs-4">Material Design at Google I/O</p>
-                          <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
+                          <img class="" src="img/unnamed-2.png" width="100%"></img>
+                          <p class="fs-4">Content design</p> 
+                          <p class="fs-6">Guidance and best practices for UX writing and information design</p>                          
                         </div>
                       </div>
                     </div>
@@ -356,9 +422,9 @@
                     <div class="card" style="min-width: 10rem;" >
                       <div class="card-body bg-light px-0 py-0">
                         <div class="d-flex flex-wrap">
-                          <img class="t--est" src="img/unnamed-8.png" width="100%"></img>
-                          <p class="fs-4">Material Design at Google I/O</p>
-                          <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
+                          <img class="" src="img/unnamed-8.png" width="100%"></img>
+                          <p class="fs-4">New component: Carousel</p>
+                          <p class="fs-6">An expressive new way to display a horizontally scrolling collection of content</p>             
                         </div>
                       </div>
                     </div>
@@ -367,22 +433,24 @@
                     <div class="card" style="min-width: 10rem;" >
                       <div class="card-body bg-light px-0 py-0">
                         <div class="d-flex flex-wrap">
-                          <img class="t--est" src="img/unnamed-6.png" width="100%"></img>
-                          <p class="fs-4">Material Design at Google I/O</p>
-                          <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
+                          <img class="" src="img/unnamed-6.png" width="100%"></img>
+                          <p class="fs-4">M3 for Jetpack Compose</p>
+                          <p class="fs-6">With the latest stable release, use Jetpack Compose to build a complete M3 Android app</p>
                         </div>
                       </div>
                     </div>
                   </div>
+
                 <!-- </div>
                 <div class="row row-cols-1 row-cols-md-3 g-2 ms-5 mt-1"> -->
+  
                   <div class="col">
                     <div class="card" style="min-width: 10rem;" >
                       <div class="card-body bg-light px-0 py-0">
                         <div class="d-flex flex-wrap">
-                          <img class="t--est" src="img/unnamed-3.png" width="100%"></img>
-                          <p class="fs-4">Material Design at Google I/O</p>
-                          <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
+                          <img class="" src="img/unnamed-3.png" width="100%"></img>
+                          <p class="fs-4">Material Theme Builder</p> 
+                          <p class="fs-6">Easily migrate or get started with the M3 color system and dynamic color</p>                      
                         </div>
                       </div>
                     </div>
@@ -391,9 +459,9 @@
                     <div class="card" style="min-width: 10rem;" >
                       <div class="card-body bg-light px-0 py-0">
                         <div class="d-flex flex-wrap">
-                          <img class="t--est" src="img/unnamed-1.png" width="100%"></img>
-                          <p class="fs-4">Material Design at Google I/O</p>
-                          <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
+                          <img class="" src="img/unnamed-1.png" width="100%"></img>
+                          <p class="fs-4">How the color system works</p>
+                          <p class="fs-6">From color roles and accessible tone pairs to dynamic color, learn how color works in Material </p>                      
                         </div>
                       </div>
                     </div>
@@ -403,8 +471,8 @@
                       <div class="card-body bg-light px-0 py-0">
                         <div class="d-flex flex-wrap">
                           <img class="rounded-5" src="img/unnamed-7.png" width="100%"></img>
-                          <p class="fs-4">Material Design at Google I/O</p>
-                          <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
+                          <p class="fs-4">Using Material icons</p>
+                          <p class="fs-6">Learn how to use and customize the latest system icons for your UI  </p>                      
                         </div>
                       </div>
                     </div>
@@ -413,8 +481,64 @@
               </div>  
             </div>
           </div>
+        </section>
+
+
+          <!--IV-->
+          <section>
+            <p>section----</p>
+            <div class="ms-5 ps-5">
+              <div class="container">
+                <div class="ms-5 ps-4"><p class="fs-1 text-left">Resources</p></div>
+                <div class="row row-cols-1 row-cols-md-2 g-2">
+                  <div class="col">
+                    <div class="card" style="min-width: 10rem;" >
+                      <div class="card-body px-0 py-0">
+                        <div class="d-flex flex-wrap">
+                          
+                          <p class="fs-4">Material Design at Google I/O</p>
+                          <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="min-width: 10rem;" >
+                      <div class="card-body px-0 py-0">
+                        <div class="d-flex flex-wrap">
+                          
+                          <p class="fs-4">New component: Carousel</p>
+                          <p class="fs-6">An expressive new way to display a horizontally scrolling collection of content</p> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="min-width: 10rem;" >
+                      <div class="card-body px-0 py-0">
+                        <div class="d-flex flex-wrap">
+                          
+                          <p class="fs-4">M3 for Jetpack Compose</p>
+                          <p class="fs-6">With the latest stable release, use Jetpack Compose to build a complete M3 Android app</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="min-width: 10rem;" >
+                      <div class="card-body px-0 py-0">
+                        <div class="d-flex flex-wrap">
+                          
+                          <p class="fs-4">M3 for Jetpack Compose</p>
+                          <p class="fs-6">With the latest stable release, use Jetpack Compose to build a complete M3 Android app</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
-          <section><p>section</p></section>
     </div>    
     <footer>2024</footer>
     <!-- Bootstrap JS -->
