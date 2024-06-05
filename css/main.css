@@ -8,37 +8,46 @@ p{
     font-family: "M3-ref";
 }
 */
+body{
+    margin: 0;
+}
 .offcanvas{
     margin-left: 5.5rem !important;
     background-color: #F2ECEE;
     text-align: left;
 }
-
+section{
+    border: 2px solid red;
+}
+#mobileNav{
+    display: none;
+    background-color: #F2ECEE;
+}
 #desktopNav{
     display: block;
     background-color: #F2ECEE;
     width: 5.5rem;
 }
-
-#mobileNav{
-    display: none;
-    background-color: #F2ECEE;
-}
-
-#desktopNav a{
+.nav-link{
     color: #4D4256;
-}
-
-#desktopNav li a svg{
-    width: 4rem;
-    height: 4rem;    
     transition-duration: 0.1s;
 }
-#desktopNav li a div:hover{
+div.label{
+    /* width: 4rem; */
+    height: 2rem;    
+    font-size: 0.70rem;
+    transition-duration: 0.1s;
+}
+.nav-link:hover{
+    color: black;
+}
+div.label:hover{
+    color: black;
     border-radius: 1rem;
     background-color: #E5DFE2;
+    text-shadow: 0 0 0.05rem #17212b, 0 0 0.15rem black;
+    /* text-shadow: 0 0 5px #17212b, 0 0 15px white; */
 }
-
 #customStyleLnk{
     border-radius: 1rem;
     background-color: #F1D3F9;
@@ -46,12 +55,14 @@ p{
 #customStyleLnk span:hover{
     color: black;
 }
-
 #customStyleLnk-2{
     border-radius: 1rem;
     background-color: #DCDAF5;
 }
-
+#M3-icon{
+    scale: 50%;
+    fill: #4D4256 !important;
+}
 svg{
     fill: #4D4256;
     scale: 50%;
