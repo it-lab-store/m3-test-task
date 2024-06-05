@@ -11,10 +11,13 @@ p{
 body{
     margin: 0;
 }
+
+
 .offcanvas{
-    margin-left: 5.5rem !important;
+    margin-left: 6.25rem !important;
     background-color: #F2ECEE;
     text-align: left;
+    border-left: 1px solid #E8E0E8;
 }
 section{
     border: 2px solid red;
@@ -33,11 +36,13 @@ section{
     transition-duration: 0.1s;
 }
 div.label{
-    /* width: 4rem; */
+
     height: 2rem;    
     font-size: 0.70rem;
     transition-duration: 0.1s;
 }
+
+
 .nav-link:hover{
     color: black;
 }
@@ -46,7 +51,7 @@ div.label:hover{
     border-radius: 1rem;
     background-color: #E5DFE2;
     text-shadow: 0 0 0.05rem #17212b, 0 0 0.15rem black;
-    /* text-shadow: 0 0 5px #17212b, 0 0 15px white; */
+
 }
 #customStyleLnk{
     border-radius: 1rem;
@@ -68,7 +73,14 @@ svg{
     scale: 50%;
 }
 
-
+.btn-primary{
+    background-color: #7051D9;
+    border: none;
+    border-radius: 25rem;
+    height: 5rem;
+    width: auto;
+    font-size: 2rem;
+}
 
 /*QUERIES*/
 @media screen and (max-width: 576px){
