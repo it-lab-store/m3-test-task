@@ -22,14 +22,14 @@
     
 
     <div class="container-fluid">
-          <section style="z-index: 2 !important;">
+          <section id="mainSection" style="z-index: 2 !important;">
             <!--Mobile Menu Bar-->
             <div id="mobileNav">
               <nav class="navbar bg-body-tertiary">
                 <form class="container-fluid justify-content-between">
                   <!--<button class="btn me-2" type="button"><img src="svg/menu_open_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="search-svg">--><!--menu--><!--</button>-->
                   <!-- <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button> -->
-                  <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasMobileMenu" role="button" aria-controls="offcanvasExample"><div id="" class=""><img src="svg/menu_open_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="menu-svg"></div></a>
+                  <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasMobileMenu" role="button" aria-controls="offcanvasExample"><div id="" class=""><img src="svg/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="menu-svg"></div></a>
                   <a class="nav-link" href="#"><div id="" class="justify-content-center align-items-start"><img id="mobileLogo" src="svg/m3-logo-black-and-white.svg" height="30rem" alt="M3-Home-svg"></div></a>
                   <a class="nav-link" href="#"><div id="" class=""><img src="svg/search_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="search-svg"></div></a>
                       <!--SubMenu-Level2-->
@@ -74,6 +74,7 @@
                           <a class="nav-link" href="#"><div class="label"><p class="label fs-6"><img src="svg/palette_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Foundations-svg">Styles -> </p></div></a>
                           <a class="nav-link" href="#"><div class="label"><p class="label fs-6"><img src="svg/add_circle_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Foundations-svg">Components -> </p></div></a>
                           <a class="nav-link" href="#"><div class="label"><p class="label fs-6"><img src="svg/pages_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Foundations-svg">Blog -> </p></div></a>
+                          <a class="nav-link" href="#"><div id="darkmodeMobile" class="label"><p class="label fs-6"><img src="svg/dark_mode_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="DarkMode-svg">Switch to dark mode</p></div></a>
                         </div>
                       </div>
                 </form>
@@ -89,7 +90,7 @@
                           <a class="nav-link active" aria-current="page" href="#"><div id="customStyleLnk" class=""><img src="svg/search_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="search-svg"><p class="label"></p></div></a>
                            <a class="nav-link" href="#"><div id="customStyleLnk-2" class="label">                             
                             <svg id="M3-logo" width="70" height="70" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="70" height="70" rx="21" fill="none"/><path d="M35 59c-3.309 0-6.436-.618-9.382-1.854-2.909-1.273-5.454-2.982-7.636-5.128-2.146-2.181-3.855-4.727-5.127-7.636C11.617 41.436 11 38.309 11 35c0-3.345.618-6.473 1.854-9.382 1.273-2.909 2.982-5.436 5.128-7.582 2.182-2.181 4.727-3.89 7.636-5.127C28.564 11.636 31.691 11 35 11c3.346 0 6.473.636 9.382 1.91 2.909 1.236 5.436 2.945 7.582 5.126 2.182 2.146 3.89 4.673 5.127 7.582 1.273 2.91 1.91 6.037 1.91 9.382 0 3.31-.637 6.436-1.91 9.382-1.236 2.909-2.945 5.455-5.127 7.636-2.146 2.146-4.673 3.855-7.582 5.128C41.472 58.382 38.346 59 35 59ZM19.727 47.273V22.727A18.969 18.969 0 0 0 16.51 28.4c-.764 2.073-1.145 4.273-1.145 6.6s.381 4.545 1.145 6.655a19.143 19.143 0 0 0 3.218 5.618Zm3-27.546h24.6a18.97 18.97 0 0 0-5.672-3.218c-2.11-.764-4.328-1.145-6.655-1.145s-4.545.381-6.654 1.145a19.143 19.143 0 0 0-5.619 3.218ZM35 40.455l8.236-16.364H26.818L35 40.455Zm2.182 5.454h8.727V28.455l-8.727 17.454Zm-13.091 0h8.727l-8.727-17.454v17.454ZM35 54.636c2.326 0 4.544-.381 6.654-1.145 2.109-.764 4-1.836 5.672-3.218h-24.6a19.143 19.143 0 0 0 5.619 3.218c2.109.764 4.327 1.145 6.654 1.145Zm15.272-7.363a19.143 19.143 0 0 0 3.218-5.618c.764-2.11 1.145-4.328 1.145-6.655s-.381-4.527-1.145-6.6c-.764-2.11-1.836-4-3.218-5.673v24.546Z" fill="#000"/></svg>                                                                         
-                            <!--<img id="M3-logo" src="svg/m3-logo-black-and-white.svg" alt="M3-Home-svg">--></div><p class="label">Home</p></a> 
+                            <!--<img id="M3-logo" src="svg/m3-logo-black-and-white.svg" alt="M3-Home-svg">--><p class="label">Home</p></div></a> 
                           <a class="nav-link" href="#"><div class="label"><img src="svg/apps_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="search-svg"><p class="label">Get started</p></div></a>
                           <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasDevelop" role="button" aria-controls="offcanvasExample">
                           <div class="label"><img src="svg/code_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Develop-svg"><p class="label">Develop</p></div>
@@ -153,13 +154,14 @@
                           <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasBlog" role="button" aria-controls="offcanvasExample">
                             <div class="label"><img src="svg/pages_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="pagesBlog-svg"><p class="label">Blog</p></div>
                           </a>
-                          <a class="nav-link" href="#"><div class="label"><img src="svg/dark_mode_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="DarkMode-svg"><p class="label">Switch to dark mode</p></div></a>
+                          <a class="nav-link" href="#"><div id="darkmodeDesktop" class="label"><img src="svg/dark_mode_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="DarkMode-svg"><p class="label">Switch to dark mode</p></div></a>
 
                         <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
                         </div>
                       </nav>
                     </div>
-                  
+            <!-- </section>
+            <section style="z-index: 2 !important;">             -->
                   <div class="container-fluid mx-3 mt-2">
                     <div id="" class="d-flex flex-fill">
                       <div class="col col-6 me-1">

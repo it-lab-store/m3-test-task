@@ -70,6 +70,12 @@ div.label{
     height: 2rem;    
     font-size: 0.70rem;
     transition-duration: 0.1s;
+    margin-bottom: 1.5rem;
+}
+.label img, .label svg{
+    /* border: 2px solid red; */
+    padding-top: 0.25rem;
+    padding-bottom: 0.5rem;
 }
 .nav-link:hover{
     color: black;
@@ -83,6 +89,8 @@ div.label:hover{
 #customStyleLnk{
     border-radius: 1rem;
     background-color: #F1D3F9;
+    height: 3rem;
+
 }
 #customStyleLnk span:hover{
     color: black;
@@ -90,9 +98,11 @@ div.label:hover{
 #customStyleLnk-2{
     border-radius: 1rem;
     background-color: #DCDAF5;
+    height: 2rem;
+    
 }
 #M3-logo{
-    margin: 0 0rem -1.25rem -0.5rem;
+    margin: -1.25rem 0rem 0rem -0.5rem;
     /* scale: 50%; */
     border: none;
 }
@@ -129,6 +139,13 @@ img{
     border-radius: var(--border-radius-image);
 }
 
+#darkmodeDesktop{
+    margin-top: 18rem;
+}
+#darkmodeMobile{
+    margin-top: 12rem
+}
+
 /*QUERIES*/
 @media screen and (max-width: 5000px) and (min-width: 577px) {
     #mobileElem{
@@ -160,10 +177,19 @@ img{
         width: 198% !important;
         z-index: 5;
     }
-
     #mobileLogo{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         margin-left: -8rem;
+    }
+    section{
+        margin-left: -5.75rem;
+    }
+    #mainSection{
+        margin: 0;
+        margin-left: -1rem !important;
+    }
+    footer{
+        display: none;
     }
     
 }
