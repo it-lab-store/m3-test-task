@@ -12,19 +12,30 @@ p{
     --light-gray: #17212b;
     --light-main-backgound-color: #F2ECEE;
     --border-radius-image: 2rem;
-    --fs-1-mobileresize: 3rem;
-    --fs-4-mobileresize: 0.5rem;
+    --fs-1-mobile-resize: 4rem;
+    --fs-1-resize: 6rem;    
+    --fs-1-restyle: bold;
+
+    --fs-2-resize: 4rem;
+    --fs-2-mobile-resize: 2.5rem;
+    --fs-4-mobile-resize: 1.5rem;
     --no-border: none;
 }
 body{
     margin: 0;
     font-family: 'Product Sans', sans-serif;
 }
+
 h1{
-    font-size: 6.5rem;
+    font-size: var(--fs-1-resize);
 }
+h2{
+    font-size: var(--fs-2-resize);
+}
+
 .fs-1{
-    font-size: 6.5rem;
+    /* font-size: var(--fs-1-resize); */
+    font-weight: var(--fs-1-restyle);
 }
 
 .fs-4{
@@ -137,9 +148,16 @@ img{
         display: none !important;
     }
     h1 {
-        font-size: var(--fs-1-mobileresize);
+        font-size: var(--fs-1-mobile-resize);
     }
-    p. fs-4{
-        font-size: var(--fs-4-mobileresize);
+    h2 {
+        font-size: var(--fs-2-mobile-resize);
     }
+    .btn-primary{
+        font-size: var(--fs-4-mobile-resize);
+    }
+    
+    /* .fs-4{
+        font-size: var(--fs-4-mobile-resize);
+    } */
 }
