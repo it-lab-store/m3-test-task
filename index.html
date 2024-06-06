@@ -30,7 +30,7 @@
                   <!--<button class="btn me-2" type="button"><img src="svg/menu_open_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="search-svg">--><!--menu--><!--</button>-->
                   <!-- <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button> -->
                   <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasMobileMenu" role="button" aria-controls="offcanvasExample"><div id="" class=""><img src="svg/menu_open_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="menu-svg"></div></a>
-                  <a class="nav-link" href="#"><div id="" class="justify-content-center align-items-start"><img id="" src="svg/m3-logo-black-and-white.svg" height="30rem" alt="M3-Home-svg"></div></a>
+                  <a class="nav-link" href="#"><div id="" class="justify-content-center align-items-start"><img id="mobileLogo" src="svg/m3-logo-black-and-white.svg" height="30rem" alt="M3-Home-svg"></div></a>
                   <a class="nav-link" href="#"><div id="" class=""><img src="svg/search_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="search-svg"></div></a>
                       <!--SubMenu-Level2-->
                       <div class="offcanvas offcanvas-start" style="width: 20rem;" data-bs-scroll="false" data-bs-backdrop="static" tabindex="-1" id="offcanvasMobileMenu" aria-labelledby="offcanvasExampleLabel">
@@ -82,12 +82,14 @@
             <!--Desktop Menu Bar-->
             <div class="d-flex">
                     <div class="">
-                      <div id="stickyElem" class="" style="z-index: -1 !important; block-size: 150rem; width: 5.5rem; margin: 0 0 -150rem;"></div>
+                      <div id="stickyElem" class="" style="z-index: -1 !important; block-size: 180rem; width: 5.5rem; margin: 0 0 -180rem;"></div>
                       <!--Menu element-->
                       <nav id="desktopNav" class="nav flex-column">
                         <div class="text-center">
                           <a class="nav-link active" aria-current="page" href="#"><div id="customStyleLnk" class=""><img src="svg/search_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="search-svg"><p class="label"></p></div></a>
-                          <a class="nav-link" href="#"><div id="customStyleLnk-2" class=""><img id="M3-icon" src="svg/m3-logo-black-and-white.svg" alt="M3-Home-svg"><p class="label">Home</p></div></a>
+                           <a class="nav-link" href="#"><div id="customStyleLnk-2" class="label">                             
+                            <svg id="M3-logo" width="70" height="70" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="70" height="70" rx="21" fill="none"/><path d="M35 59c-3.309 0-6.436-.618-9.382-1.854-2.909-1.273-5.454-2.982-7.636-5.128-2.146-2.181-3.855-4.727-5.127-7.636C11.617 41.436 11 38.309 11 35c0-3.345.618-6.473 1.854-9.382 1.273-2.909 2.982-5.436 5.128-7.582 2.182-2.181 4.727-3.89 7.636-5.127C28.564 11.636 31.691 11 35 11c3.346 0 6.473.636 9.382 1.91 2.909 1.236 5.436 2.945 7.582 5.126 2.182 2.146 3.89 4.673 5.127 7.582 1.273 2.91 1.91 6.037 1.91 9.382 0 3.31-.637 6.436-1.91 9.382-1.236 2.909-2.945 5.455-5.127 7.636-2.146 2.146-4.673 3.855-7.582 5.128C41.472 58.382 38.346 59 35 59ZM19.727 47.273V22.727A18.969 18.969 0 0 0 16.51 28.4c-.764 2.073-1.145 4.273-1.145 6.6s.381 4.545 1.145 6.655a19.143 19.143 0 0 0 3.218 5.618Zm3-27.546h24.6a18.97 18.97 0 0 0-5.672-3.218c-2.11-.764-4.328-1.145-6.655-1.145s-4.545.381-6.654 1.145a19.143 19.143 0 0 0-5.619 3.218ZM35 40.455l8.236-16.364H26.818L35 40.455Zm2.182 5.454h8.727V28.455l-8.727 17.454Zm-13.091 0h8.727l-8.727-17.454v17.454ZM35 54.636c2.326 0 4.544-.381 6.654-1.145 2.109-.764 4-1.836 5.672-3.218h-24.6a19.143 19.143 0 0 0 5.619 3.218c2.109.764 4.327 1.145 6.654 1.145Zm15.272-7.363a19.143 19.143 0 0 0 3.218-5.618c.764-2.11 1.145-4.328 1.145-6.655s-.381-4.527-1.145-6.6c-.764-2.11-1.836-4-3.218-5.673v24.546Z" fill="#000"/></svg>                                                                         
+                            <!--<img id="M3-logo" src="svg/m3-logo-black-and-white.svg" alt="M3-Home-svg">--></div><p class="label">Home</p></a> 
                           <a class="nav-link" href="#"><div class="label"><img src="svg/apps_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="search-svg"><p class="label">Get started</p></div></a>
                           <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasDevelop" role="button" aria-controls="offcanvasExample">
                           <div class="label"><img src="svg/code_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Develop-svg"><p class="label">Develop</p></div>
@@ -198,7 +200,7 @@
                       <div class="col col-6 ms-1">
                         <!-- <div class="card" style="min-width: 20rem;"> -->
                           <!-- <div class="card-body px-0 py-0" > -->
-                            <video autoplay width="100%" src="video/65da8f0326427a8e71bfa678348f3fa1a4bb1660e0b013591eb3bfd9df455bd5a3334249de61229029be7d2fd7cf18d4e143728b7e0702b6bde6251a.mp4"></video>
+                            <video autoplay width="842rem" src="video/65da8f0326427a8e71bfa678348f3fa1a4bb1660e0b013591eb3bfd9df455bd5a3334249de61229029be7d2fd7cf18d4e143728b7e0702b6bde6251a.mp4"></video>
                           <!-- </div> -->
                         <!-- </div> -->
                       </div>
@@ -210,39 +212,45 @@
           <!--I-->
           <section>
             <!-- <div class="container-fluid mx-5 ps-5 justify-content-center"> -->
-            <div class="ms-5 ps-5">
+            <div class="ms-5 ps-5 mt-5">
               <div class="container">
                 <div class="ms-5"><h2 class="text-left">News & launches</h2></div>
                 <div class="row row-cols-1 row-cols-md-3 g-2">
                   <div class="col">
                     <div class="card " style="min-width: 10rem;" >
-                      <div class="card-body  px-0 py-0">
+                      <div class="card-body px-0 py-0">
                         <div class="d-flex flex-wrap">
                           <img class="" src="img/unnamed-5.png" width="100%"></img>
-                          <p class="fs-4">Material Design at Google I/O</p>
-                          <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
+                          <div class="p-4">
+                            <p class="fs-4">Material Design at Google I/O</p>
+                            <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>
+                          </div>                      
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="card" style="min-width: 10rem;" >
-                      <div class="card-body bg-light px-0 py-0">
+                      <div class="card-body px-0 py-0">
                         <div class="d-flex flex-wrap">
                           <img class="" src="img/unnamed.png" width="100%"></img>
-                          <p class="fs-4">New component: Carousel</p>
-                          <p class="fs-6">An expressive new way to display a horizontally scrolling collection of content</p> 
+                          <div class="p-4">
+                            <p class="fs-4">New component: Carousel</p>
+                            <p class="fs-6">An expressive new way to display a horizontally scrolling collection of content</p> 
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="card" style="min-width: 10rem;" >
-                      <div class="card-body bg-light px-0 py-0">
+                      <div class="card-body px-0 py-0">
                         <div class="d-flex flex-wrap">
                           <img class="" src="img/unnamed-4.png" width="100%"></img>
-                          <p class="fs-4">M3 for Jetpack Compose</p>
-                          <p class="fs-6">With the latest stable release, use Jetpack Compose to build a complete M3 Android app</p>
+                          <div class="p-4">
+                            <p class="fs-4">M3 for Jetpack Compose</p>
+                            <p class="fs-6">With the latest stable release, use Jetpack Compose to build a complete M3 Android app</p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -255,39 +263,45 @@
         <!--II-->
         <section>
           
-            <div class="ms-5 ps-5">
+            <div class="ms-5 ps-5 mt-5">
               <div class="container">
                 <div class="ms-5"><h2 class="text-left">Design system updates</h2></div>
                 <div class="row row-cols-1 row-cols-md-3 g-2">
                   <div class="col">
                     <div class="card" style="min-width: 10rem;" >
-                      <div class="card-body bg-light px-0 py-0">
+                      <div class="card-body px-0 py-0">
                         <div class="d-flex flex-wrap">
                           <img class="" src="img/unnamed-2.png" width="100%"></img>
-                          <p class="fs-4">Content design</p> 
-                          <p class="fs-6">Guidance and best practices for UX writing and information design</p>                          
+                          <div class="p-4">
+                            <p class="fs-4">Content design</p> 
+                            <p class="fs-6">Guidance and best practices for UX writing and information design</p>          
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="card" style="min-width: 10rem;" >
-                      <div class="card-body bg-light px-0 py-0">
+                      <div class="card-body px-0 py-0">
                         <div class="d-flex flex-wrap">
                           <img class="" src="img/unnamed-8.png" width="100%"></img>
+                          
                           <p class="fs-4">New component: Carousel</p>
-                          <p class="fs-6">An expressive new way to display a horizontally scrolling collection of content</p>             
+                          <p class="fs-6">An expressive new way to display a horizontally scrolling collection of content</p> 
+
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="card" style="min-width: 10rem;" >
-                      <div class="card-body bg-light px-0 py-0">
+                      <div class="card-body px-0 py-0">
                         <div class="d-flex flex-wrap">
                           <img class="" src="img/unnamed-6.png" width="100%"></img>
+                          
                           <p class="fs-4">M3 for Jetpack Compose</p>
                           <p class="fs-6">With the latest stable release, use Jetpack Compose to build a complete M3 Android app</p>
+
                         </div>
                       </div>
                     </div>
@@ -298,33 +312,39 @@
   
                   <div class="col">
                     <div class="card" style="min-width: 10rem;" >
-                      <div class="card-body bg-light px-0 py-0">
+                      <div class="card-body px-0 py-0">
                         <div class="d-flex flex-wrap">
                           <img class="" src="img/unnamed-3.png" width="100%"></img>
+                          
                           <p class="fs-4">Material Theme Builder</p> 
-                          <p class="fs-6">Easily migrate or get started with the M3 color system and dynamic color</p>                      
+                          <p class="fs-6">Easily migrate or get started with the M3 color system and dynamic color</p>        
+
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="card" style="min-width: 10rem;" >
-                      <div class="card-body bg-light px-0 py-0">
+                      <div class="card-body px-0 py-0">
                         <div class="d-flex flex-wrap">
                           <img class="" src="img/unnamed-1.png" width="100%"></img>
+
                           <p class="fs-4">How the color system works</p>
-                          <p class="fs-6">From color roles and accessible tone pairs to dynamic color, learn how color works in Material </p>                      
+                          <p class="fs-6">From color roles and accessible tone pairs to dynamic color, learn how color works in Material </p> 
+
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="card" style="min-width: 10rem;" >
-                      <div class="card-body bg-light px-0 py-0">
+                      <div class="card-body px-0 py-0">
                         <div class="d-flex flex-wrap">
                           <img class="rounded-5" src="img/unnamed-7.png" width="100%"></img>
+
                           <p class="fs-4">Using Material icons</p>
-                          <p class="fs-6">Learn how to use and customize the latest system icons for your UI  </p>                      
+                          <p class="fs-6">Learn how to use and customize the latest system icons for your UI  </p>            
+
                         </div>
                       </div>
                     </div>
@@ -337,7 +357,7 @@
 
           <!--III-->
           <section>
-            <div class="ms-5 ps-5">
+            <div class="ms-5 ps-5 mt-5">
               <div class="container">
                 <div class="ms-5 ps-4"><h2 class="text-left">Resources</h2></div>
                 <div class="row row-cols-1 row-cols-md-2 g-2">
@@ -345,9 +365,10 @@
                     <div class="card" style="min-width: 10rem;" >
                       <div class="card-body px-0 py-0">
                         <div class="d-flex flex-wrap">
-                          
-                          <p class="fs-4">Material Design at Google I/O</p>
-                          <p class="fs-6">See the full list of Material talks and tutorials launching at I/O 2024</p>                      
+                          <div class="p-4">
+                            <p class="fs-4">Material blog</p>
+                            <p class="fs-6">News, tutorials, and inspiration from the Material team</p>                 
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -356,9 +377,10 @@
                     <div class="card" style="min-width: 10rem;" >
                       <div class="card-body px-0 py-0">
                         <div class="d-flex flex-wrap">
-                          
-                          <p class="fs-4">New component: Carousel</p>
-                          <p class="fs-6">An expressive new way to display a horizontally scrolling collection of content</p> 
+                          <div class="p-4">                          
+                            <p class="fs-4">Figma design kit</p>
+                            <p class="fs-6">Customizable styles and components to help you design with Material 3</p> 
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -367,9 +389,10 @@
                     <div class="card" style="min-width: 10rem;" >
                       <div class="card-body px-0 py-0">
                         <div class="d-flex flex-wrap">
-                          
-                          <p class="fs-4">M3 for Jetpack Compose</p>
-                          <p class="fs-6">With the latest stable release, use Jetpack Compose to build a complete M3 Android app</p>
+                          <div class="p-4">
+                            <p class="fs-4">Get started</p>
+                            <p class="fs-6">Guides, videos, and tools to start building with Material</p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -378,9 +401,10 @@
                     <div class="card" style="min-width: 10rem;" >
                       <div class="card-body px-0 py-0">
                         <div class="d-flex flex-wrap">
-                          
-                          <p class="fs-4">M3 for Jetpack Compose</p>
-                          <p class="fs-6">With the latest stable release, use Jetpack Compose to build a complete M3 Android app</p>
+                          <div class="p-4">
+                            <p class="fs-4">Develop</p>
+                            <p class="fs-6">Code and developer documentation for building with Material</p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -389,55 +413,56 @@
               </div>
             </div>
           </section>
-    <!-- </div>     -->
+    </div>    
 
      <!--IV-->
      <div class="container">
-      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-        <div class="col mb-3">
-          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-            <img id="M3-icon" src="svg/m3-logo-black-and-white.svg" alt="M3-Home-svg">
-          </a>
-          <p class="text-body-secondary">&copy; 2023</p>
-        </div>
-    
-        <div class="col mb-3">
-    
-        </div>
-    
-        <div class="col mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-          </ul>
-        </div>
-    
-        <div class="col mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-          </ul>
-        </div>
-    
-        <div class="col mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-          </ul>
-        </div>
+      <footer>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top">
+              <div class="col mb-3 me-5 w-25">
+                <a href="#" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                  <img id="" src="svg/m3-logo-black-and-white.svg" alt="M3-Home-svg">
+                </a>
+                <p class="text-body-dark">Material Design is an adaptable system of guidelines, components, and tools that support the best practices of user interface design. Backed by open-source code, Material Design streamlines collaboration between designers and developers, and helps teams quickly build beautiful products.</p>
+              </div>  
+          
+              
+              <div class="col mb-3 ms-5 ps-5">
+                <!-- <h5>Section</h5> -->
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link ms-5 p-0 text-body-tertiary">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link ms-5 p-0 text-body-tertiary fs-5">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link ms-5 p-0 text-body-tertiary fs-5">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link ms-5 p-0 text-body-tertiary fs-5">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link ms-5 p-0 text-body-tertiary fs-5">About</a></li>
+                </ul>
+              </div>
+          
+              <div class="col mb-3">
+                <!-- <h5>Section</h5> -->
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link ms-5 p-0 text-body-tertiary">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link ms-5 p-0 text-body-tertiary fs-5">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link ms-5 p-0 text-body-tertiary fs-5">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link ms-5 p-0 text-body-tertiary fs-5">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link ms-5 p-0 text-body-tertiary fs-5">About</a></li>
+                </ul>
+              </div>
+          
+              <div class="col mb-3">
+                <!-- <h5 class="">Section</h5> -->
+                <ul class="nav flex-column">              
+                  <li class="nav-item mb-2"><a href="#" class="nav-link ms-5 p-0 text-body-tertiary">Archived versions</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link ms-5 p-0 text-body-tertiary fs-5">Material Design 1</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link ms-5 p-0 text-body-tertiary fs-5">Material Design 2</a></li>
+                </ul>
+              </div>  
+
+          </div>
+
       </footer>
+
+
     </div>
     <!-- Bootstrap JS -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
